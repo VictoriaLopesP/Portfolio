@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    overflow-x: hidden;
+    background-color: #0A0A0A;
+}
+
+/*    navbar    */
+
+.navbar {
+    background-color: #121212;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    color: #F0F0F0
+}
+
+.navbar a:hover {
+    color: #FFC84C
+}
+
+.dropdown-menu {
+    background-color: #0A0A0A;
+    font-family: 'Chakra Petch', sans-serif;
+    padding-left: 20px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFC84C;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+}
+
+
+.no-highlight {
+    color: #fff;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+
+/*    info    */
+
+
+.foto-perfil {
+    width: 200px;
+    border-radius: 50%;
+    border: 2px #F0F0F0 solid;
+}
+
+.texto-info {
+    color: #F0F0F0;
+}
+
+.texto-info h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.texto-info p {
+    margin-top: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    text-align: start;
+}
+
+.btn-cv {
+    background-color: transparent;
+    color: #F0F0F0;
+    display: flex;
+    width: 126px;
+    height: 60px;
+    padding: 20px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--White, #F0F0F0);
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.btn-cv:hover {
+    background-color: #FFC84C;
+    color: #0A0A0A;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+.links-info a {
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.links-info a:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*    sobre mim    */
+
+.scrollspyHeading2 h1 {
+    color: #F0F0F0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+}
+
+.scrollspyHeading2 p {
+    margin-top: 80px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Titillium Web', sans-serif;
+    color: #F0F0F0;
+}
+
+
+/*    habilidades    */
+
+.scrollspyHeading3 h1 {
+    color: #F0F0F0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+}
+
+.habi-bg {
+    background: rgba(255, 255, 255, 0.10);
+}
+
+/*    projetos    */
+
+.scrollspyHeading4 h1 {
+    color: #F0F0F0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+}
+
+.card-tamanho {
+    background: rgba(255, 255, 255, 0.158);
+    color: #F0F0F0;
+    border-radius: 0;
+    text-align: start;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.btn-espaco {
+    background-color: #FFC84C;
+    color: #0A0A0A;
+    border-radius: 0;
+    border: 0;
+    margin-left: 14px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    width: 135px;
+    transition: transform 0.2s;
+}
+
+.btn-espaco:hover {
+    transform: scale(1.1);
+    background-color: #FFC84C;
+    color: #0A0A0A;
+}
+
+
+
+/*    contato    */
+
+.scrollspyHeading5 h1 {
+    color: #F0F0F0;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+}
+
+.scrollspyHeading5 a {
+    text-decoration: none;
+}
+
+.btn-contato-linkedin {
+    background-color: transparent;
+    border: 4px white solid;
+    color: #F0F0F0;
+    display: flex;
+    width: 215px;
+    height: 108px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.btn-contato-linkedin:hover {
+    background-color: #FFC84C;
+    color: #0A0A0A;
+    border: 4px #FFC84C solid;
+}
+
+.btn-contato-linkedin img {
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.btn-contato-linkedin:hover img {
+    filter: brightness(0%);
+}
+
+
+.pr-site {
+    font-size: 18px;
+    text-align: start;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+}
+
+.pr-nome {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.btn-email:hover {
+    cursor: default;
+}
+
+
+
+
+
+
+
+/* telas smartphones */
+
+@media (min-width: 320px) and (max-width: 425px) {
+    body {
+        background-image: url(assets/img-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+    }
+
+    .pr-site {
+        margin-bottom: -3px;
+    }
+
+    .pr-email {
+        margin-bottom: -3px;
+    }
+    
+    .pr-gmail {
+        margin-left: -3px;
+    }
+
+    .content-inicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-abaixo {
+        margin-top: 100px;
+    }
+
+    .texto-info {
+        margin-left: 10px;
+    }
+
+    .links-info a img {
+        width: 30px;
+    }
+
+    .foto-perfil {
+        width: 180px;
+    }
+
+    .texto-info h1 {
+        font-size: 35px;
+    }
+
+    .texto-info p {
+        font-size: 18px;
+    }
+
+    .btn-cv {
+        margin-top: 10px;
+        width: 120px;
+        height: 55px;
+        font-size: 12px;
+    }
+
+    .btn-cv:hover {
+        font-size: 12px;
+    }
+
+    .btn-espaco {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+
+}
+
+/* telas tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(assets/img-tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    }
+
+    .pr-site {
+        margin-bottom: -3px;
+    }
+
+    .pr-email {
+        margin-bottom: -3px;
+    }
+    
+    .pr-gmail {
+        margin-left: -3px;
+    }
+
+    .conteudo-abaixo {
+        margin-top: 120px;
+    }
+
+    .content-inicio {
+        margin-top: px;
+    }
+
+    .btn-espaco {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .img-mobile {
+        width: 400px;
+    }
+
+    .info-container {
+        margin-right: 8%;
+    }
+
+    .links-info {
+        padding-top: 50px;
+    }
+
+    .links-info a img {
+        width: 30px;
+    }
+
+    .texto-info h1 {
+        font-size: 35px;
+    }
+
+    .texto-info p {
+        font-size: 16px;
+    }
+
+    .btn-cv {
+        margin-top: 10px;
+        width: 120px;
+        height: 60px;
+        font-size: 12px;
+    }
+
+    .btn-cv:hover {
+        font-size: 12px;
+    }
+    
+
+}
+
+/* telas notebook */
+@media (min-width: 1280px) and (max-width: 1440px) {
+    body {
+        background-image: url(assets/img-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    }
+
+    .btn-espaco {
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .pr-site {
+        margin-bottom: -3px;
+    }
+
+    .pr-email {
+        margin-bottom: -3px;
+    }
+    
+    .pr-gmail {
+        margin-left: -3px;
+    }
+
+    .pr-nome {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 10px;
+    }
+
+    .conteudo-abaixo {
+        margin-top: 200px;
+    }
+
+    .conteudo-abaixo p {
+        font-size: 18px;
+    }
+
+    .content-inicio {
+        margin-top: px;
+    }
+
+
+    .img-mobile {
+        width: 400px;
+    }
+
+    .info-container {
+        margin-right: 8%;
+    }
+
+    .links-info {
+        padding-top: 50px;
+    }
+
+    .links-info a img {
+        width: 30px;
+    }
+
+    .texto-info h1 {
+        font-size: 35px;
+    }
+
+    .texto-info p {
+        font-size: 16px;
+    }
+
+    .btn-cv {
+        margin-top: 10px;
+        width: 120px;
+        height: 60px;
+        font-size: 12px;
+    }
+
+    .btn-cv:hover {
+        font-size: 12px;
+    }
+}
+
+/* telas desktop */
+@media (min-width: 1920px) and (max-width: 2400px) {
+
+    body {
+        background-image: url(assets/img-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+    }
+
+    .btn-espaco {
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .btn-contato-linkedin {
+        background-color: transparent;
+        border: 4px white solid;
+        color: #F0F0F0;
+        display: flex;
+        width: 250px;
+        height: 108px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    
+    }
+
+    .pr-site {
+        margin-bottom: -3px;
+    }
+
+    .pr-email {
+        margin-bottom: -3px;
+    }
+    
+    .pr-gmail {
+        margin-left: -3px;
+    }
+
+    .content-inicio {
+        margin-top: 100px;
+    }
+
+    .conteudo-abaixo {
+        margin-top: 250px;
+    }
+
+    .conteudo-abaixo p {
+        font-size: 20px;
+    }
+
+
+    .texto-info {
+        margin-left: 10px;
+    }
+
+
+    .links-info a img {
+        width: 50px;
+    }
+
+    .foto-perfil {
+        width: 300px;
+    }
+
+    .texto-info h1 {
+        font-size: 60px;
+    }
+
+    .texto-info p {
+        font-size: 25px;
+    }
+
+    .btn-cv {
+        margin-top: 10px;
+        width: 160px;
+        height: 70px;
+        font-size: 14px;
+    }
+
+    .btn-cv:hover {
+        font-size: 14px;
+    }
+
+    
+}
+
+/* telas grandes */
+
+@media (min-width: 2560px) {
+
+    body {
+        background-image: url(assets/img-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+    }
+
+   .btn-espaco {
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .btn-contato-linkedin {
+        background-color: transparent;
+        border: 4px white solid;
+        color: #F0F0F0;
+        display: flex;
+        width: 280px;
+        height: 140px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    
+    }
+
+    .pr-site {
+        margin-bottom: -3px;
+    }
+
+    .pr-email {
+        margin-bottom: -3px;
+    }
+    
+    .pr-gmail {
+        margin-left: -3px;
+    }
+
+    .content-inicio {
+        margin-top: 200px;
+    }
+
+    .conteudo-abaixo {
+        margin-top: 450px;
+    }
+
+    .conteudo-abaixo p {
+        font-size: 26px;
+    }
+
+    .texto-info {
+        margin-left: 10px;
+    }
+
+
+    .links-info a img {
+        width: 60px;
+    }
+
+    .foto-perfil {
+        width: 450px;
+    }
+
+    .texto-info h1 {
+        font-size: 90px;
+    }
+
+    .texto-info p {
+        font-size: 40px;
+    }
+
+    .btn-cv {
+        margin-top: 30px;
+        width: 250px;
+        height: 100px;
+        font-size: 22px;
+    }
+
+    .btn-cv:hover {
+        font-size: px;
+    }
+}
