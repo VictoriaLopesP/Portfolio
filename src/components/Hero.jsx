@@ -150,7 +150,7 @@ export default function Hero() {
           <a href="mailto:victorialpcp@gmail.com">
             <FaEnvelope />
           </a>
-          <a href="https://wa.me/22997230807" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/5522997230807?text=" target="_blank" rel="noopener noreferrer">
             <FaWhatsapp />
           </a>
         </SocialIcons>

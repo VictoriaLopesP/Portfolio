@@ -46,9 +46,9 @@ export default function About() {
     <AboutContainer>
       <Title>Sobre mim_</Title>
       <Text>
-        Início de carreira, crio experiências web interativas e responsivas. 
+        Graduanda em Engenharia de Software, data prevista para término: 2027. 
         <br /><br />
-        Quero crescer como desenvolvedora front-end, contribuindo para projetos significativos e criando soluções que tornem a experiência do usuário mais rica e envolvente.
+        Crio experiências web interativas e responsivas. Quero crescer como desenvolvedora front-end, contribuindo para projetos significativos e criando soluções que tornem a experiência do usuário mais rica e envolvente.
       </Text>
     </AboutContainer>
   );
