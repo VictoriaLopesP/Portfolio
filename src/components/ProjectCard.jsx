@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Modal from "./Modal"; // Importando o modal
+import Modal from "./Modal"; 
 
 const Card = styled.div`
   width: 350px;

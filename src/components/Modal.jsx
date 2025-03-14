@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import gifPixel from '../assets/gif-pixel.gif';
 
-// Overlay do Modal
 const ModalOverlay = styled.div`
   position: fixed;
   top: 0;
@@ -16,7 +15,6 @@ const ModalOverlay = styled.div`
   z-index: 1000;
 `;
 
-// Conteúdo do Modal
 const ModalContent = styled.div`
   background: #1E1E1E;
   padding: 20px;
@@ -37,7 +35,6 @@ const ModalContent = styled.div`
   }
 `;
 
-// Botão de Fechar
 const CloseButton = styled.button`
   position: absolute;
   top: 10px;
@@ -50,7 +47,6 @@ const CloseButton = styled.button`
   z-index: 10;
 `;
 
-// Lado Esquerdo (contêiner para centralizar o título e a descrição)
 const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -60,7 +56,6 @@ const LeftContainer = styled.div`
   width: 100%; /* Faz com que o contêiner ocupe toda a largura */
 `;
 
-// Título do Modal
 const Title = styled.h2`
   font-size: 24px;
   font-weight: bold;
@@ -70,7 +65,6 @@ const Title = styled.h2`
   white-space: normal; /* Permite que o texto quebre de linha se necessário */
 `;
 
-// Descrição do Projeto
 const Description = styled.p`
   font-size: 16px;
   color: white;
@@ -80,7 +74,6 @@ const Description = styled.p`
   word-wrap: break-word; /* Evita que o texto ultrapasse a largura definida */
 `;
 
-// GIF do projeto
 const GifImage = styled.img`
   width: 100%;
   max-width: 500px;
@@ -89,7 +82,6 @@ const GifImage = styled.img`
   border-radius: 5px;
 `;
 
-// Links para o GitHub
 const LinksContainer = styled.div`
   margin-top: 20px;
   display: flex;
@@ -104,14 +96,12 @@ const LinksContainer = styled.div`
   }
 `;
 
-// Modal
 export default function Modal({ onClose }) {
   return (
     <ModalOverlay>
       <ModalContent>
         <CloseButton onClick={onClose}>✖</CloseButton>
 
-        {/* Lado Esquerdo com o título e descrição centralizados */}
         <LeftContainer>
           <Title>Pixel</Title>
           <Description>
@@ -133,7 +123,6 @@ export default function Modal({ onClose }) {
           </LinksContainer>
         </LeftContainer>
 
-        {/* Lado Direito */}
         <GifImage src={gifPixel} alt="Projeto Pixel em funcionamento" />
       </ModalContent>
     </ModalOverlay>

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import ProjectCard from './ProjectCard';
 import projectImage1 from '../assets/img-pokedex.png'; 
 import projectImageDesktop from '../assets/img-pokedex-desktop.png';
-import gifPixel from '../assets/gif-pixel.gif';
 import pixelImage from '../assets/pixel-01.png'; 
 
 const ProjectsSection = styled.section`
