@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import ProjectCard from './ProjectCard';
 import projectImage1 from '../assets/img-pokedex.png'; 
 import projectImageDesktop from '../assets/img-pokedex-desktop.png';
+import gifPixel from '../assets/gif-pixel.gif';
+import pixelImage from '../assets/pixel-01.png'; 
 
 const ProjectsSection = styled.section`
   max-width: 1256px;
@@ -12,7 +14,6 @@ const ProjectsSection = styled.section`
   font-family: 'Titillium Web', sans-serif;
   color: #fff;
   margin-top: 50px;
-
   display: flex;
   flex-direction: column;
 
@@ -21,7 +22,7 @@ const ProjectsSection = styled.section`
     color: #fff;
     font-family: "Chakra Petch", sans-serif;
     width: 24%;
-
+    
     @media (min-width: 768px) {
       font-size: 50px;
       margin-top: 80px;
@@ -53,14 +54,23 @@ export default function Projetos() {
       <h2>Projetos_</h2>
       <ProjectsGrid>
         <ProjectCard 
+          imgSmall={pixelImage} 
+          imgLarge={pixelImage} 
+          title="Pixel"
+          description="MVP para fintech Pixel StartUp com React Native."
+          githubLink="https://github.com/VictoriaLopesP/Pixel"
+        />
+
+        <ProjectCard 
           imgSmall={projectImage1} 
           imgLarge={projectImageDesktop} 
           title="Pokédex"
           description="Projeto feito com HTML, CSS e Javascript, consumindo API."
           liveLink="https://link-pokedex.com" 
-          githubLink="https://github.com/seu-usuario/pokedex"
+          githubLink="https://github.com/VictoriaLopesP/Pokedex.github.io"
         />
       </ProjectsGrid>
+
     </ProjectsSection>
   );
 }

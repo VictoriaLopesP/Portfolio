@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
+import Modal from "./Modal"; // Importando o modal
 
 const Card = styled.div`
   width: 350px;
@@ -32,7 +33,6 @@ const Title = styled.h3`
   margin: 16px 0;
   color: #fff;
   padding-left: 15px;
-
 `;
 
 const Description = styled.p`
@@ -48,19 +48,17 @@ const Buttons = styled.div`
   gap: 10px;
   padding-right: 20px;
   margin-left: auto;
-
-   @media (min-width: 768px) {
-    margin-left: auto;
-  }
 `;
 
-const Button = styled.a`
+const Button = styled.button`
   padding: 15px 30px;
   background-color: #FFC84C;
   color: #333;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 700;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
   transition: background-color 0.3s;
 
   &:hover {
@@ -70,32 +68,21 @@ const Button = styled.a`
 `;
 
 export default function ProjectCard({ title, description, liveLink, githubLink, imgSmall, imgLarge }) {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const imageSrc = windowWidth >= 768 ? imgLarge : imgSmall;
+  const [modalOpen, setModalOpen] = useState(false); 
 
   return (
     <Card>
-      <Image src={imageSrc} alt={title} />
+      <Image src={imgSmall} alt={title} />
       <Title>{title}</Title>
       <Description>{description}</Description>
       <Buttons>
-        <Button href={liveLink} target="_blank" rel="noopener noreferrer">
-          Ver Projeto
-        </Button>
-        <Button href={githubLink} target="_blank" rel="noopener noreferrer">
+        <Button onClick={() => setModalOpen(true)}>Ver Projeto</Button>
+        <Button as="a" href={githubLink} target="_blank" rel="noopener noreferrer">
           GitHub
         </Button>
       </Buttons>
+
+      {modalOpen && <Modal onClose={() => setModalOpen(false)} />}
     </Card>
   );
 }
