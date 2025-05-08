@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Modal from "./Modal"; 
+import VeraModal from "./VeraModal";
 
 const Card = styled.div`
   width: 350px;
@@ -67,8 +68,24 @@ const Button = styled.button`
   }
 `;
 
-export default function ProjectCard({ title, description, liveLink, githubLink, imgSmall, imgLarge }) {
-  const [modalOpen, setModalOpen] = useState(false); 
+export default function ProjectCard({ 
+  title, 
+  description, 
+  liveLink, 
+  githubLink, 
+  imgSmall, 
+  imgLarge, 
+  useModal = false 
+}) {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleViewProject = () => {
+    if (useModal) {
+      setModalOpen(true);
+    } else if (liveLink) {
+      window.open(liveLink, "_blank");
+    }
+  };
 
   return (
     <Card>
@@ -76,13 +93,13 @@ export default function ProjectCard({ title, description, liveLink, githubLink, 
       <Title>{title}</Title>
       <Description>{description}</Description>
       <Buttons>
-        <Button onClick={() => setModalOpen(true)}>Ver Projeto</Button>
+        <Button onClick={handleViewProject}>Ver Projeto</Button>
         <Button as="a" href={githubLink} target="_blank" rel="noopener noreferrer">
           GitHub
         </Button>
       </Buttons>
 
-      {modalOpen && <Modal onClose={() => setModalOpen(false)} />}
+      {useModal && modalOpen && (title === "Pixel" ? <Modal onClose={() => setModalOpen(false)} /> : <VeraModal onClose={() => setModalOpen(false)} />)}
     </Card>
   );
 }

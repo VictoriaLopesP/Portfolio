@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import gifPixel from '../assets/gif-pixel.gif';
+import veraGif from '../assets/Veragif.gif'; 
 
 const ModalOverlay = styled.div`
   position: fixed;
@@ -48,22 +48,28 @@ const CloseButton = styled.button`
 `;
 
 const LeftContainer = styled.div`
+  flex: 1; /* Vai usar o máximo de espaço disponível */
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: flex-start; 
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
-  width: 100%; 
+  padding: 0 20px;
 `;
+
+
 
 const Title = styled.h2`
   font-size: 24px;
   font-weight: bold;
   color: white;
   margin-bottom: 10px;
-  max-width: 100%; 
-  white-space: normal; 
+  white-space: nowrap;
+  align-self: flex-start;
+  text-align: left;
+  padding-left: 100px;
 `;
+
 
 const Description = styled.p`
   font-size: 18px;
@@ -76,7 +82,7 @@ const Description = styled.p`
 
 const GifImage = styled.img`
   width: 100%;
-  max-width: 500px;
+  max-width: 350px;
   height: auto;
   object-fit: contain;
   border-radius: 5px;
@@ -96,31 +102,32 @@ const LinksContainer = styled.div`
   }
 `;
 
-export default function Modal({ onClose }) {
+export default function VeraModal({ onClose }) {
   return (
     <ModalOverlay>
       <ModalContent>
         <CloseButton onClick={onClose}>✖</CloseButton>
 
         <LeftContainer>
-          <Title>Pixel</Title>
+          <Title>Vera Assistent</Title>
           <Description>
-            Entre outubro e dezembro de 2024, tive a oportunidade de trabalhar como freelancer em um projeto desafiador e gratificante para uma startup fintech. 
+          Vera é um assistente virtual desenvolvido com HTML, CSS e JavaScript, integrando tecnologias de reconhecimento de voz (Speech Recognition) e 
+          conversão de texto em fala (Text-to-Speech) para uma experiência interativa e acessível. 
           </Description>
 
           <Description>
-          O objetivo era desenvolver um MVP (Minimum Viable Product) usando React Native e o resultado foi um aplicativo voltado para microempreendedores, 
-          com foco em simplificar e automatizar sua vida financeira.
+          O projeto foi construído com Cordova e Framework7, permitindo sua execução como aplicativo mobile híbrido. A inteligência artificial é alimentada pela 
+          API da OpenAI, possibilitando respostas naturais e dinâmicas em tempo real. 
           </Description>
 
           <LinksContainer>
-            <a href="https://github.com/VictoriaLopesP/Pixel" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/VictoriaLopesP/VeraAssistent" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
           </LinksContainer>
         </LeftContainer>
 
-        <GifImage src={gifPixel} alt="Projeto Pixel em funcionamento" />
+        <GifImage src={veraGif} alt="Vera Assistent em funcionamento" />
       </ModalContent>
     </ModalOverlay>
   );

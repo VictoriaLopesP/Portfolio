@@ -138,7 +138,7 @@ export default function Hero() {
         <InfoContainer>
           <Title>Victória Lopes</Title>
           <Subtitle>Desenvolvedora Front-End</Subtitle>
-          <DownloadButton href="/Currículo.docx" download>DOWNLOAD CV</DownloadButton>
+          <DownloadButton href="/Portfolio/Curriculo.docx" download>DOWNLOAD CV</DownloadButton>
         </InfoContainer>
         <SocialIcons>
           <a href="https://www.linkedin.com/in/victorialopesp/" target="_blank" rel="noopener noreferrer">

@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectCard from './ProjectCard';
-import projectImage1 from '../assets/img-pokedex.png'; 
-import projectImageDesktop from '../assets/img-pokedex-desktop.png';
-import pixelImage from '../assets/pixel-01.png'; 
+import projectImage1 from '../assets/pokedex.png'; 
+import projectImageDesktop from '../assets/pokedex.png';
+import pixelImage from '../assets/pixel.png';
+import vera from '../assets/vera.png';  
 
 const ProjectsSection = styled.section`
   max-width: 1256px;
@@ -58,6 +59,16 @@ export default function Projetos() {
           title="Pixel"
           description="MVP para fintech Pixel StartUp com React Native."
           githubLink="https://github.com/VictoriaLopesP/Pixel"
+          useModal={true} 
+        />
+
+        <ProjectCard 
+          imgSmall={vera} 
+          imgLarge={vera} 
+          title="Vera Assistent"
+          description="Assistente virtual desenvolvido usando IA da OpenAI"
+          githubLink="#"
+          useModal={true} 
         />
 
         <ProjectCard 
@@ -65,11 +76,12 @@ export default function Projetos() {
           imgLarge={projectImageDesktop} 
           title="Pokédex"
           description="Projeto feito com HTML, CSS e Javascript, consumindo API."
-          liveLink="https://link-pokedex.com" 
+          liveLink="https://victorialopesp.github.io/Pokedex.github.io/" 
           githubLink="https://github.com/VictoriaLopesP/Pokedex.github.io"
+          useModal={false} 
         />
-      </ProjectsGrid>
 
+      </ProjectsGrid>
     </ProjectsSection>
   );
 }

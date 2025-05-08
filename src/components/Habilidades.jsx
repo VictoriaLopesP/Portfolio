@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import html5 from '../assets/html5.svg';
 import css3 from '../assets/css3.svg';
 import javascript from '../assets/javascript.svg';
-import typescript from '../assets/typescript.svg';
 import react from '../assets/react.svg';
 import figma from '../assets/figma.svg';
 import reactnative from '../assets/reactnative.svg';
+import csharp from '../assets/csharp.png';
+import java from '../assets/java.png';
 
 const SkillsContainer = styled.section`
   max-width: 1256px;
@@ -68,10 +69,11 @@ export default function Skills() {
         <SkillImage src={html5} alt="HTML5" />
         <SkillImage src={css3} alt="CSS3" />
         <SkillImage src={javascript} alt="JavaScript" />
-        <SkillImage src={typescript} alt="TypeScript" />
         <SkillImage src={react} alt="React" />
         <SkillImage src={figma} alt="Figma" />
         <SkillImage src={reactnative} alt="React Native" />
+        <SkillImage src={java} alt="Java" />
+        <SkillImage src={csharp} alt="C#" />
       </SkillsGrid>
     </SkillsContainer>
   );
